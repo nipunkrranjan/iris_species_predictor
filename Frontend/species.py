@@ -36,8 +36,23 @@ def versicolor():
             with st.expander("Gallery"):
                  st.image(r"https://wiki.irises.org/pub/Spec/SpecVersicolor/iversicolor07.jpg")
                  st.image(r"https://thumbs.dreamstime.com/b/iris-versicolor-single-blue-flag-black-background-31834833.jpg")
+
+
 def virginica():
      with st.expander("Iris Virginica"):
         st.image(r"https://upload.wikimedia.org/wikipedia/commons/9/9f/Iris_virginica.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",caption="Iris Virginica")
-        st.write("")
+        st.write(r"Iris virginica, with the common name Virginia blueflag,Virginia iris, great blue flag, or southern blue flag, is a perennial species of flowering plant in the Iridaceae (iris) family, native to central and eastern North America.It was identified as a separate species by Edgar Anderson, and is one of the three Iris species in Anderson's Iris flower data set, used by Ronald Fisher in his 1936 paper \"The use of multiple measurements in taxonomic problems\" as an example of linear discriminant analysis.")
+
+        st.image(r"https://www.allendanseed.com/media/products/iriscurs_0D4B2D6BC17DD.jpg?dimensions=591x443")
+
+        with st.expander("Physical Features"):
+            st.write("* Iris virginica is a perennial plant that grows up to 0.6–0.9 m (2–3 ft) tall.")
+            st.write("* The plant's sword-shaped basal leaves are erect or sometimes arching and measure up to 91 cm (3 ft) long and 2.5 cm (1 in) across at the base.")
+            st.write("* The leaves have smooth margins and are bluish green to green and glabrous. Unbranched or sparingly branched flowering stalks rise from the basal leaves to a height of up to 0.6–0.9 m (2–3 ft).")
+            st.write("* Small, alternate leaves are located on the stalks, with 1 to 2 flowers emerging from the axil of each of these leaves on pedicels that are 3–13 cm (1–5 in) long.[7]")
+            st.write("* The flowers, which bloom May to July, are blue to blue-violet and are a typical iris shape. Each flower has 3 drooping sepals, called \"falls\", that have white marks and yellow near the throat, and 3 upright petals, called \"standards\". Flowers measure 3–13 cm (1–5 in) across.")
+
+        with st.expander("Gallery"):
+            st.image("https://inaturalist-open-data.s3.amazonaws.com/photos/451638773/original.jpeg")
+            st.image("https://live.staticflickr.com/65535/53722708400_7a6280d970_b.jpg")
 #setosa()

@@ -1,5 +1,6 @@
 import streamlit as st
 import species
+import frontend
 
 def intro():
     st.header("WELCOME TO THE WORLD OF IRIS",text_alignment="center")
@@ -9,13 +10,13 @@ def intro():
 
     st.image(r"https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Parts_of_an_iris_flower.jpg/500px-Parts_of_an_iris_flower.jpg",caption="Illustration of an iris flower with highlighted parts of the flower")
 
-    st.text("Irises are perennial plants, growing from creeping rhizomes (rhizomatous irises) or, in drier climates, from bulbs (bulbous irises). They have long, erect flowering stems which may be simple or branched, solid or hollow, and flattened or have a circular cross-section. The rhizomatous species usually have 3-10 basal sword-shaped leaves growing in dense clumps.The bulbous species also have 2-10 narrow leaves growing from the bulb.")
+    st.write("Irises are perennial plants, growing from creeping rhizomes (rhizomatous irises) or, in drier climates, from bulbs (bulbous irises). They have long, erect flowering stems which may be simple or branched, solid or hollow, and flattened or have a circular cross-section. The rhizomatous species usually have 3-10 basal sword-shaped leaves growing in dense clumps.The bulbous species also have 2-10 narrow leaves growing from the bulb.")
+    t1,t2=st.tabs(["Species","Predict Your  Iris"])
+    with t1:
+        species.setosa()
+        species.versicolor()
+        species.virginica()
+    with t2:
+        frontend.predcition()
 
 intro()
-#will hit the home point of the API
-t1,t2=st.tabs(["Species","Predict Your Iris"])
-st.text_area("")
-with t1:
-    species.setosa()
-    species.versicolor()
-
