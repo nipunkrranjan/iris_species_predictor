@@ -4,6 +4,7 @@ from fastapi.responses import JSONResponse
 from typing import Optional,List,Dict,Annotated,Literal
 import pickle
 import pandas as pd
+from fastapi.responses import RedirectResponse
 
 app=FastAPI()
 
@@ -19,9 +20,11 @@ class Input_Class(BaseModel):
 
 FEATURE_ORDER = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
 
-@app.post("/")
-def home():
-    
+@app.get("/")
+def homepage():
+    # Automatically sends anyone visiting http://127.0.0.1:8000/ 
+    # straight to your Streamlit dashboard URL
+    return RedirectResponse(url="http://localhost:8501/")
 
 @app.post("/healthcheck")
 def health():
