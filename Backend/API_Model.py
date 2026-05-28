@@ -24,7 +24,7 @@ FEATURE_ORDER = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
 def homepage():
     # Automatically sends anyone visiting http://127.0.0.1:8000/ 
     # straight to your Streamlit dashboard URL
-    return RedirectResponse(url="http://localhost:8501/")
+    return RedirectResponse(url="https://iris-species-predictor-1.streamlit.app/")
 
 @app.post("/healthcheck")
 def health():
