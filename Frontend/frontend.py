@@ -21,6 +21,7 @@ def predcition():
 
     if(st.button("Predict Species")):
         try:
+            st.progress(text="Making your prediction")
             response=requests.post(API_URL,json=input_data)
             if response.status_code==200:
                 result=response.json()
